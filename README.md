@@ -37,7 +37,7 @@ Installation
 Documentation
 -------------
 
-All documentation can be viewed online on the [Swig Website](http://paularmstrong.github.io/swig/).
+All documentation can be viewed online on the [Swig Website](https://github.com/zfh521//tree/gh-pages).
 
 Basic Example
 -------------
