@@ -162,12 +162,11 @@ build-docs: FORCE
 	@echo "Documentation built."
 
 gh-pages: clean build build-docs
+	@echo "ttt1111"
 	@mkdir -p ${TMP}/js
 	@mkdir -p docs/css
 	@rm -f docs/coverage.html
-	@${BIN}/lessc --yui-compress --include-path=docs/less docs/less/swig.less docs/css/swig.css
-	@${BIN}/still docs -o ${TMP} -i "layout" -i "json" -i "less" -v
-	@make coverage out=${TMP}/coverage.html
+	@${BIN}/lessc --yui-compress --include-path=docs/less docs/less/swig.less docs/css/wig.css
 	@cp dist/swig.* ${TMP}/js/
 	@git checkout ${BRANCH}
 	@cp -r ${TMP}/* ./
